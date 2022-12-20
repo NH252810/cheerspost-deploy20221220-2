@@ -143,7 +143,7 @@ for i, row in corona_prices.iterrows():
     folium.Marker(
         location=[row["lat"], row["lng"]],
         popup=row["name"] + "<br>【ジャンル】" + row["genre"] + "</br>" + row["url"],
-        icon=folium.Icon(icon="beer", prefix="fa", icon_color="white", color="beige")
+        icon=folium.Icon(icon="beer", prefix="fa", icon_color="", color="beige")
     ).add_to(corona_group)
 # <<< コロナマップ（corona_map) <<<
 
